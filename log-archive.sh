@@ -27,7 +27,7 @@ create_archive() {
         echo "$ARCHIVE_NAME Created Successfully."
     else
         echo "Creating $ARCHIVE_NAME..."
-        tar -czvf "$ARCHIVE_DIR/$ARCHIVE_NAME" "$SOURCE_DIR
+        tar -czvf "$ARCHIVE_DIR/$ARCHIVE_NAME" "$SOURCE_DIR"
         create_archive
     fi
 }
